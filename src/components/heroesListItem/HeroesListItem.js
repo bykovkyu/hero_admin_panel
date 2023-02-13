@@ -19,7 +19,9 @@ const HeroesListItem = ({ name, description, element, onDeleteHero }) => {
   }
 
   return (
-    <li className={`card flex-row mb-4 shadow-lg text-white ${elementClassName}`}>
+    <li
+      style={{ height: '120px' }}
+      className={`card flex-row mb-4 shadow-lg text-white ${elementClassName}`}>
       <img
         src='http://www.stpaulsteinbach.org/wp-content/uploads/2014/09/unknown-hero.jpg'
         className='img-fluid w-25 d-inline'

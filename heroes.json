@@ -11,6 +11,72 @@
       "name": "Неизвестный герой",
       "description": "Скрывающийся в тени",
       "element": "wind"
+    },
+    {
+      "id": "3fc04d12-c501-44e7-bb06-4dee9d1f6a4b",
+      "name": "dfsg",
+      "description": "sdfg",
+      "element": "fire"
+    },
+    {
+      "id": "c19dcf1a-82d6-4076-bac5-d1fcb944308d",
+      "name": "dsg",
+      "description": "dsg",
+      "element": "water"
+    },
+    {
+      "id": "88d0dc5b-1517-4bf9-94a4-9a7d9d9833d5",
+      "name": "fgh",
+      "description": "fgh",
+      "element": "water"
+    },
+    {
+      "id": "43cee72e-a0f6-4fc8-b1d9-641758a01ca8",
+      "name": "sdgf",
+      "description": "sdfg",
+      "element": "fire"
+    },
+    {
+      "id": "df749c7b-db85-4422-b1db-fdf00322f38b",
+      "name": "vbn",
+      "description": "vcn",
+      "element": "earth"
+    },
+    {
+      "id": "c0f282a6-9eaf-4a4e-b4ae-678b41a0ff90",
+      "name": "asdf",
+      "description": "sadf",
+      "element": "earth"
+    },
+    {
+      "id": "40805d30-ad3e-4c52-ae6d-eb79ab558f0d",
+      "name": "asdf",
+      "description": "sadf",
+      "element": "wind"
+    },
+    {
+      "id": "4b67efd6-31e6-4621-8174-1c88e2151352",
+      "name": "df",
+      "description": "dsfg",
+      "element": "wind"
+    },
+    {
+      "id": "2f1e07b2-31a5-457e-b503-8f8725ca853c",
+      "name": "sdfg",
+      "description": "sdfg",
+      "element": "earth"
+    },
+    {
+      "id": "cf58f178-3183-49ba-8972-b4ebdd1230a1",
+      "name": "sdg",
+      "description": "sdfg",
+      "element": "water"
+    },
+    {
+      "id": "b0f2ce8d-7917-450c-baa0-6ee5550d84d9",
+      "name": "Константин",
+      "description": "sfd",
+      "element": "water"
     }
   ],
   "filters": [

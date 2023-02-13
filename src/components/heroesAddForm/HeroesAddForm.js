@@ -1,9 +1,9 @@
-import { useState, useEffect, useMemo } from 'react';
+import { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { v4 as uuidv4 } from 'uuid';
 
 import { useHttp } from '../../hooks/http.hook';
-import { heroesFetched, filtersFetched } from '../../actions';
+import { heroCreated } from '../../actions';
 
 // Задача для этого компонента:
 // Реализовать создание нового героя с введенными данными. Он должен попадать
@@ -20,33 +20,36 @@ const HeroesAddForm = () => {
   const [text, setText] = useState('');
   const [element, setElement] = useState('');
 
-  const { heroes, filters } = useSelector((state) => state);
+  const { filters, filtersLoadingStatus } = useSelector((state) => state.filters);
   const dispatch = useDispatch();
 
   const { request } = useHttp();
 
-  useEffect(() => {
-    request('http://localhost:3001/filters').then((data) => dispatch(filtersFetched(data)));
-  }, []);
+  const renderElements = (filters, status) => {
+    if (status === 'loading') {
+      return <option>Загрузка элементов</option>;
+    } else if (status === 'error') {
+      return <option>Ошибка загрузки</option>;
+    }
 
-  let options = useMemo(
-    () =>
-      filters.map(({ name, value }) => (
+    if (filters && filters.length > 0) {
+      return filters.map(({ name, value }) => (
         <option
           key={value}
           value={value}>
           {name}
         </option>
-      )),
-    [filters]
-  );
+      ));
+    }
+  };
 
   const onSubmit = (e) => {
     e.preventDefault();
     const hero = { id: uuidv4(), name, description: text, element };
-    request('http://localhost:3001/heroes', 'POST', JSON.stringify(hero)).then(() =>
-      dispatch(heroesFetched([...heroes, hero]))
-    );
+    request('http://localhost:3001/heroes', 'POST', JSON.stringify(hero))
+      .then((res) => console.log(res, 'Успешно добавлен'))
+      .then(() => dispatch(heroCreated(hero)))
+      .catch((err) => console.log(err));
     setName('');
     setText('');
     setElement('');
@@ -106,7 +109,7 @@ const HeroesAddForm = () => {
           value={element}
           onChange={(e) => setElement(e.target.value)}>
           <option value=''>Я владею элементом...</option>
-          {options}
+          {renderElements(filters, filtersLoadingStatus)}
         </select>
       </div>
 
