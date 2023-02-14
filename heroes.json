@@ -43,22 +43,10 @@
       "element": "wind"
     },
     {
-      "id": "2f1e07b2-31a5-457e-b503-8f8725ca853c",
-      "name": "sdfg",
-      "description": "sdfg",
-      "element": "earth"
-    },
-    {
       "id": "cf58f178-3183-49ba-8972-b4ebdd1230a1",
       "name": "sdg",
       "description": "sdfg",
       "element": "water"
-    },
-    {
-      "id": "08f475d1-08ac-41a5-9812-b430ac90fedd",
-      "name": "ewrt",
-      "description": "ert",
-      "element": "fire"
     },
     {
       "id": "43216e96-d807-4339-8808-87dac71d3bef",
@@ -82,6 +70,18 @@
       "id": "317aa826-cfe7-4e1c-905d-e3c32bb7199a",
       "name": "dfg",
       "description": "dsfg",
+      "element": "water"
+    },
+    {
+      "id": "0da0a81a-ee83-4284-8d2b-55e8625b7943",
+      "name": "cvb",
+      "description": "cxv",
+      "element": "fire"
+    },
+    {
+      "id": "16ede126-2990-47ee-a0b0-c27f28cc3c05",
+      "name": "fgd",
+      "description": "dfg",
       "element": "water"
     }
   ],
