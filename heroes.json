@@ -1,12 +1,6 @@
 {
   "heroes": [
     {
-      "id": 1,
-      "name": "Первый герой",
-      "description": "Первый герой в рейтинге!",
-      "element": "fire"
-    },
-    {
       "id": 2,
       "name": "Неизвестный герой",
       "description": "Скрывающийся в тени",
@@ -28,12 +22,6 @@
       "id": "cf58f178-3183-49ba-8972-b4ebdd1230a1",
       "name": "sdg",
       "description": "sdfg",
-      "element": "water"
-    },
-    {
-      "id": "f0ce2f5a-7e02-4479-b338-92bd27918602",
-      "name": "dsfs",
-      "description": "sdf",
       "element": "water"
     },
     {
@@ -89,6 +77,30 @@
       "name": "123",
       "description": "asdf",
       "element": "wind"
+    },
+    {
+      "id": "d6af9cb5-28aa-4982-a0b6-9820378caa7a",
+      "name": "cvb",
+      "description": "cvb",
+      "element": "water"
+    },
+    {
+      "id": "a1ae43e9-0686-47ff-ae3b-62c3625a743a",
+      "name": "sdf",
+      "description": "sdf",
+      "element": "wind"
+    },
+    {
+      "id": "665e4993-d93a-4e0e-aaff-0d850d764e98",
+      "name": "fsdg",
+      "description": "sdg",
+      "element": "fire"
+    },
+    {
+      "id": "fd69b799-c376-4e5d-83e9-a5365a2f4e7b",
+      "name": "dfg",
+      "description": "dfg",
+      "element": "water"
     }
   ],
   "filters": [
