@@ -6,7 +6,8 @@ import { createSelector } from 'reselect';
 import './heroesList.scss';
 
 import { useHttp } from '../../hooks/http.hook';
-import { fetchHeroes, heroDeleted } from '../../actions';
+import { fetchHeroes } from '../../actions';
+import { heroDeleted } from './heroesSlice';
 import HeroesListItem from '../heroesListItem/HeroesListItem';
 import Spinner from '../spinner/Spinner';
 

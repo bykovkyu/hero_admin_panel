@@ -3,7 +3,8 @@ import { useSelector, useDispatch } from 'react-redux';
 import classNames from 'classnames';
 
 import { useHttp } from '../../hooks/http.hook';
-import { fetchFilters, changedActiveFilter } from '../../actions';
+import { fetchFilters } from '../../actions';
+import { filterActiveChanged } from './filtersSlice';
 
 import Spinner from '../spinner/Spinner';
 
@@ -36,7 +37,7 @@ const HeroesFilters = () => {
       <button
         key={i}
         className={`btn ${className} ${classNames({ active: activeFilter === value })}`}
-        onClick={() => dispatch(changedActiveFilter(value))}>
+        onClick={() => dispatch(filterActiveChanged(value))}>
         {name}
       </button>
     ));
@@ -50,7 +51,7 @@ const HeroesFilters = () => {
         <div className='btn-group'>
           <button
             className={`btn btn-outline-dark ${classNames({ active: activeFilter === null })}`}
-            onClick={() => dispatch(changedActiveFilter(null))}>
+            onClick={() => dispatch(filterActiveChanged(null))}>
             Все
           </button>
           {elements}
