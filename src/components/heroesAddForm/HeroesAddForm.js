@@ -1,27 +1,24 @@
 import { useState } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import { useSelector } from 'react-redux';
 import { v4 as uuidv4 } from 'uuid';
 
-import { useHttp } from '../../hooks/http.hook';
-import { heroCreated } from '../heroesList/heroesSlice';
 import { selectAll } from '../heroesFilters/filtersSlice';
 import store from '../../store';
+import { useCreateHeroMutation } from '../../api/apiSlice';
 
 const HeroesAddForm = () => {
   const [name, setName] = useState('');
   const [text, setText] = useState('');
   const [element, setElement] = useState('');
 
+  const [createHero, { isLoading, isError }] = useCreateHeroMutation();
+
   const { filtersLoadingStatus } = useSelector((state) => state.filters);
   const filters = selectAll(store.getState());
-  const dispatch = useDispatch();
-
-  const { request } = useHttp();
-
   const renderElements = (filters, status) => {
-    if (status === 'loading') {
+    if (isLoading) {
       return <option>Загрузка элементов</option>;
-    } else if (status === 'error') {
+    } else if (isError) {
       return <option>Ошибка загрузки</option>;
     }
 
@@ -39,10 +36,7 @@ const HeroesAddForm = () => {
   const onSubmit = (e) => {
     e.preventDefault();
     const hero = { id: uuidv4(), name, description: text, element };
-    request('http://localhost:3001/heroes', 'POST', JSON.stringify(hero))
-      .then((res) => console.log(res, 'Успешно добавлен'))
-      .then(() => dispatch(heroCreated(hero)))
-      .catch((err) => console.log(err));
+    createHero(hero).unwrap();
     setName('');
     setText('');
     setElement('');

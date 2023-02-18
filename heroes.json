@@ -7,99 +7,27 @@
       "element": "wind"
     },
     {
-      "id": "3fc04d12-c501-44e7-bb06-4dee9d1f6a4b",
-      "name": "dfsg",
-      "description": "sdfg",
-      "element": "fire"
-    },
-    {
-      "id": "cf58f178-3183-49ba-8972-b4ebdd1230a1",
-      "name": "sdg",
-      "description": "sdfg",
-      "element": "water"
-    },
-    {
-      "id": "0da0a81a-ee83-4284-8d2b-55e8625b7943",
-      "name": "cvb",
-      "description": "cxv",
-      "element": "fire"
-    },
-    {
-      "id": "2a97ebf7-e4c7-4f60-ad9f-2b7b9d125b5c",
-      "name": "sfhf",
-      "description": "ljk",
-      "element": "earth"
-    },
-    {
-      "id": "f5c409c8-c026-4a32-9392-c14fe572e829",
-      "name": "hjl",
-      "description": "jlh",
-      "element": "earth"
-    },
-    {
-      "id": "4a47aa9c-a7d4-46ec-befc-4ce1d7813f15",
-      "name": "uyi",
-      "description": "uio",
-      "element": "earth"
-    },
-    {
-      "id": "2437b820-b368-4ca6-899c-bb05337d0806",
-      "name": "h.v",
-      "description": "vb",
-      "element": "wind"
-    },
-    {
       "id": "f4eefcd2-6598-45af-8cfc-6b5c9400f45f",
       "name": "sfgds",
       "description": "gsdfg",
       "element": "fire"
     },
     {
-      "id": "319471a6-5bd3-45f9-ac59-c31433e0eca8",
-      "name": "123",
-      "description": "asdf",
-      "element": "wind"
-    },
-    {
-      "id": "a1ae43e9-0686-47ff-ae3b-62c3625a743a",
-      "name": "sdf",
-      "description": "sdf",
-      "element": "wind"
-    },
-    {
-      "id": "fd69b799-c376-4e5d-83e9-a5365a2f4e7b",
-      "name": "dfg",
-      "description": "dfg",
-      "element": "water"
-    },
-    {
-      "id": "f8394617-9b27-4b31-9214-ce9deae656c1",
-      "name": "sdf",
-      "description": "sdf",
-      "element": "water"
-    },
-    {
-      "id": "fc8e1e3b-7cc1-4796-b1f0-b09e414733e5",
-      "name": "afdg",
-      "description": "sdfg",
-      "element": "water"
-    },
-    {
-      "id": "e71d9ada-5e75-4a24-8295-561e17373c48",
-      "name": "vcx",
-      "description": "bcb",
-      "element": "fire"
-    },
-    {
-      "id": "09f508f6-e505-42e2-ad72-642093505fa2",
-      "name": "fdhgdfhg",
-      "description": "fghfgh",
+      "id": "271134c3-6052-4742-a718-540fd7534293",
+      "name": "Известный герой",
+      "description": "Заметный на свету",
       "element": "earth"
     },
     {
-      "id": "0a3ecef5-0c7e-424c-bfd2-675b2cbf5d0d",
-      "name": "asf",
-      "description": "dshgfjkhgk",
+      "id": "e289a046-c1d8-4a5c-a06d-965d04d082bb",
+      "name": "sfg",
+      "description": "dsfg",
+      "element": "fire"
+    },
+    {
+      "id": "09cbe1ee-0a84-464f-8537-6077e309e7e1",
+      "name": "sdf",
+      "description": "gh",
       "element": "wind"
     }
   ],
